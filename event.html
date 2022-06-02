@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bg{
+            width: 200px;
+            height: 200px;
+            border: solid 2px blue;
+        }
+    </style>
+</head>
+<body>
+    <h2>JavaScript Events</h2>
+    <form action="">
+        <!-- onclick -->
+        <input type="button" onclick="alert('Good Afternoon')" value="Click to greet">
+        <input type="button" onclick="clickSurprise()" value="Click">
+    </form>
+
+    <p>Click button to display the date.</p>
+    <button onclick="displayDate()">The date now is</button>
+    <button onclick="document.getElementById('display').innerHTML = Date()">The date now</button>
+
+    <p id="display"></p>
+
+    <!-- onFocus -->
+    <h2>Enter something here.</h2>
+    <input type="text" id="input1" name="input1" onfocus="focusEvent()" onkeyup="keyupEvent()">
+
+    <h2>This is example of windows onload</h2>
+    <div id="bg">
+        this is a box
+    </div>
+
+    <script>
+        function clickSurprise(){
+            alert("Surprise!");
+        }
+
+        function displayDate(){
+            document.getElementById('display').innerHTML = Date();
+        }
+
+        function focusEvent(){
+            document.getElementById('input1').style.backgroundColor = "aqua";
+            document.getElementById('input1').style.height = "200px";
+        }
+
+        function keyupEvent(){
+            document.getElementById('input1').style.backgroundColor = "red";
+        }
+
+        window.onload = function(){
+            document.getElementById('bg').style.backgroundColor = "yellow";
+            document.getElementById('bg').style.width = "300px";
+            document.getElementById('bg').style.height = "300px";
+        }
+
+
+    </script>
+</body>
+</html>
