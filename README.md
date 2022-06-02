@@ -4,4 +4,4 @@
  
  (calculate Body Mass Index) https://airwhen09.github.io/CalculateBodyMassIndex/CalculateBodyMassIndex.html.html
  
- (Simple Calculator) https://airwhen09.github.io/CalculateBodyMassIndex/SimpleCalculator.html
+ (Simple Calculator) https://airwhen09.github.io/CalculateBodyMassIndex/simpleCalculator.html
